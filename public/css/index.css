@@ -1,0 +1,125 @@
+body {
+    background-color: rgb(31, 31, 31);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(156, 16, 44);
+}
+
+.formularioTarefas {
+    display: flex;
+    justify-content: center;
+    padding: 20px 2%;
+}
+
+.formularioTarefas button, input {
+    padding: 10px 40px;
+    transition: opacity .2s ease;
+    opacity: 0.7;
+    border: 0;
+}
+
+.formularioTarefas input {
+    border-radius: 5px 0 0 5px;
+    background-color: rgb(231, 231, 231);
+}
+
+.formularioTarefas input:focus {
+    outline: 0;
+    opacity: 1;
+}
+
+.formularioTarefas button {
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(156, 16, 44);
+    color: aliceblue;
+}
+
+.formularioTarefas button:hover {
+    outline: 0;
+    opacity: 1;
+}
+
+/* Lista */
+.lista {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.list-item {
+    display: flex;
+    height: 40px;
+    margin: 1% 5%;
+    box-shadow: 0 0 20px black;
+    background-color: #fff;
+}
+
+.list-item-checked{
+    background-color: #d4f6d9;
+}
+
+.list-item-checked .item-name{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.list-item-checked .item-checkebox .material-symbols-outlined{
+    color: green;
+}
+
+.item-name {
+    flex: 70%;
+    display: flex;
+    align-items: center;
+}
+
+.item-name {
+    margin-left: 10%;
+}
+
+.item-checkebox {
+    flex: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-checkebox i {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.item-button {
+    flex: 20%;
+    background-color: rgb(156,16,44);
+    border: 0;
+    opacity: .8;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 14px;
+    transition: opacity .2s ease;
+}
+
+.item-button i {
+    font-size: 1rem;
+    text-align: center;
+    font-size: 14px;
+}
+
+.item-button:hover {
+    opacity: 1;
+}
+
+.item-checked {
+    border-radius: 200px;
+    margin-left: 5%;
+}
+
+.checked {
+    background-color: rgb(59, 160, 59);
+}
